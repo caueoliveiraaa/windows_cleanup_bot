@@ -51,7 +51,7 @@ print('a', a)
 print('len(a)', len(a))
 
 
-# ++++++++++ To check if a certain phrase or character is present **
+# ++++++++++ To check if a certain phrase or character is present ++
 # ++++++++++ in a string, we can use the keyword in. +++++++++++++++
 
 # Check if "free" is present in the following text:
@@ -84,3 +84,25 @@ print('"expensive" not in txt', "expensive" not in txt)
 txt = "The best things in life are free!"
 if "expensive" not in txt:
   print("No, 'expensive' is NOT present.")
+
+
+
+
+# ++++++++++++++++++++++++++ Slicing ++++++++++++++++++++++++++
+
+# You can return a range of characters by using the slice syntax.
+# Specify the start index and the end index, separated by a colon,
+# to return a part of the string.
+string = 'Hello, world!'
+print(f'string: {string}')
+print(f'Printing position of {string} (string[2:5]): {string[2:5]}')  # output: llo
+
+# By leaving out the start index, the range will start at the first character
+print(f'Printing position of {string} (string[:5]): {string[:5]}') # output: Hello 
+
+# By leaving out the end index, the range will go to the end
+print(f'Printing position of {string} (string[2:]): {string[2:]}') # output: llo, world!
+
+# Use negativa indexes to start the slice from the end of the string
+# from 'o' in 'world!' (position -5) to, but not included 'd' in 'world' (position -2)
+print(f'Printing position of {string} (string[-5:-2]): {string[-5:-2]}')  # output: orl
