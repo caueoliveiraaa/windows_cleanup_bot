@@ -4,13 +4,16 @@ Exercise 1:
 Given a string, print it in reverse using negative indexes.
 
 Exercise 2:
-Write a program that takes a string as input and prints its characters in reverse order.
+Write a program that takes a string as input and prints its
+characters in reverse order.
 
 Exercise 3:
-Create a function that takes a string and returns a new string with every second character.
+Create a function that takes a string and returns a new string
+with every second character.
 
 Exercise 4:
-Write a program that takes a string and prints the first and last characters.
+Write a program that takes a string and prints the first and
+last characters.
 
 Exercise 5:
 Given a string, print the characters at even indexes.
@@ -19,10 +22,12 @@ Exercise 6:
 Write a program that checks whether a string is a palindrome.
 
 Exercise 7:
-Create a function that counts the occurrences of a specific character in a string.
+Create a function that counts the occurrences of a specific
+character in a string.
 
 Exercise 8:
-Write a program that replaces all occurrences of a specified character with another character in a given string.
+Write a program that replaces all occurrences of a specified
+character with another character in a given string.
 
 Exercise 9:
 Given a string, print the characters at odd indexes.
@@ -37,7 +42,8 @@ Exercise 12:
 Create a program that generates a random password of a specified length.
 
 Exercise 13:
-Write a program that formats a list of strings into a single comma-separated string.
+Write a program that formats a list of strings into a single
+comma-separated string.
 
 Exercise 14:
 Given a string, print the first and last three characters.
@@ -49,7 +55,8 @@ Exercise 16:
 Write a program that capitalizes the first letter of each word in a string.
 
 Exercise 17:
-Given a string, print the characters in reverse order, skipping the first and last characters.
+Given a string, print the characters in reverse order, skipping the
+first and last characters.
 
 Exercise 18:
 Create a program that extracts all the numbers from a string.
@@ -61,7 +68,8 @@ Exercise 20:
 Given a string, check if it is a valid email address format.
 
 Exercise 21:
-Create a program that truncates a string to a specified length and adds an ellipsis if necessary.
+Create a program that truncates a string to a specified length
+and adds an ellipsis if necessary.
 
 Exercise 22:
 Write a program that encrypts a string using the Caesar cipher.
@@ -85,7 +93,8 @@ Exercise 28:
 Write a program that removes duplicate characters from a string.
 
 Exercise 29:
-Given a string, find the longest consecutive substring of a single character.
+Given a string, find the longest consecutive substring of a
+single character.
 
 Exercise 30:
 Create a program that checks if a string is a valid JSON object.

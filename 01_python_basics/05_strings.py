@@ -83,7 +83,7 @@ print('"expensive" not in txt', "expensive" not in txt)
 
 txt = "The best things in life are free!"
 if "expensive" not in txt:
-  print("No, 'expensive' is NOT present.")
+    print("No, 'expensive' is NOT present.")
 
 
 
@@ -106,3 +106,49 @@ print(f'Printing position of {string} (string[2:]): {string[2:]}') # output: llo
 # Use negativa indexes to start the slice from the end of the string
 # from 'o' in 'world!' (position -5) to, but not included 'd' in 'world' (position -2)
 print(f'Printing position of {string} (string[-5:-2]): {string[-5:-2]}')  # output: orl
+
+
+
+# ++++++++++++++++++++++++ Modify Strings ++++++++++++++++++++++++
+
+# Python has a set of built-in methods that you can use on strings.
+# The upper() method returns the string in upper case:
+a = "Hello, World!"
+print(f'a = {a}')
+print('a.upper()', a.upper()) # returns "HELLO, WOLRD!"
+
+# The lower() method returns the string in lower case:
+a = "Hello, World!"
+print('a.lower()', a.lower()) # returns "hello, world!"
+
+# Whitespace is the space before and/or after the actual text,
+# and very often you want to remove this space.
+a = " Hello, World! "
+print('a.strip()', a.strip()) # returns "Hello, World!"
+
+# The replace() method replaces a string with another string:
+a = "Hello, World!"
+print('a.replace("H", "J")', a.replace("H", "J"))
+
+# The split() method returns a list where the text between the specified separator becomes the list items.
+# The split() method splits the string into substrings if it finds instances of the separator:
+a = "Hello, World!"
+print('a.split(",")', a.split(",")) # returns ['Hello', ' World!']
+print('a.split("o")', a.split("o")) # returns ['Hello', ' World!']
+
+
+
+# ++++++++++++++++++++++ String Concatenation ++++++++++++++++++++++
+
+# To concatenate, or combine, two strings you can use the + operator.
+# Merge variable a with variable b into variable c:
+a = "Hello"
+b = "World"
+c = a + b
+print('c', c)
+
+# To add a space between them, add a " ":
+a = "Hello"
+b = "World"
+c = a + " " + b
+print('c', c)
