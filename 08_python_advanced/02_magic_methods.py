@@ -64,6 +64,10 @@ class MyQueue(Queue):
     def __add__(self, item) -> None:
         self.put(item)
     
+# FIND OUT ALL
+
+
+
 qu = MyQueue()
 print(qu)
 qu + 5
