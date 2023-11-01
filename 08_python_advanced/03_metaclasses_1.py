@@ -14,7 +14,7 @@ print(func)  # <class '__main__.func'>
 print(type(Test))  # <class 'type'>   -   (metaclass)
 
 
-# NOTE: Creating classes dynamically.
+# Creating classes dynamically with the built-in function 'type':
 # 'Test': This is the name of the new class that you’re creating.
 # (): This is a tuple containing the base classes that your new class will inherit from. 
 #      In this case, it’s empty, so your class doesn’t inherit from any other classes.
@@ -24,11 +24,17 @@ print(type(Test))  # <class 'type'>   -   (metaclass)
 Test = type('Test', (), {})
 print(Test)  # <class '__main__.Test'>  
 
-# NOTE: Adding a method to the class.
-
+# Adding a method to the class:
 def hello_world(self):
     print('Hello world!')
 
 Test = type('Test', (), {'hello_world': hello_world})
 test = Test()
 test.hello_world()
+
+# Creating an attribute:    
+Test = type('Test', (), {"n":5})
+test2 = Test()
+print(test2.n)
+test2.s = 'Hello World.'
+print(test2.s)
