@@ -1,9 +1,12 @@
-# Creating a metaclass (type is necessary as a parameter)
+# NOTE - creating a metaclasses:
+
+# type is necessary as a parameter
 class Meta(type):
     # Dunger method the executes before the init method
     def __new__(self, class_name, bases, attrs):
         print(attrs)
 
+        # Changing attributes of the class to uppercase
         dict_attrs = {}
         for name, value in attrs.items():
             if name.startswith('__'):
@@ -14,9 +17,21 @@ class Meta(type):
         print(dict_attrs)
         return type(class_name, bases, dict_attrs)
     
-class Dog(metaclass=Meta):
+
+class Bot(metaclass=Meta): 
     x = 5
-    y = 5
+    y = 15
+    s = '459687'
 
     def greet(self):
         print('Hello humans.')
+
+
+#   *** LOOK UP THE DOCS ON IT ***
+
+if __name__ == '__main__':
+    bot = Bot()
+    bot.GREET()
+    print(bot.S)
+    print(bot.X)
+    print(bot.Y)
