@@ -5,11 +5,14 @@ import os
 def display_error() -> None:
     """ Show error message. """
 
+    red = '\033[031m'
+    yellow = '\033[033m'
+    close = '\033[0m'
     exctp, exc, exctb = sys.exc_info()
     message = f'\ntraceback:{exctb.tb_frame.f_code.co_name}:{exctb.tb_lineno}:{exctp}:'
     message_error += f'{exc}\n'
-    print('\033[33m' + message + '\033[0m', end='')
-    print('"\033[33m' + message_error + '\033[0m"')
+    print(yellow + message + close, end='')
+    print(red + message_error + close)
 
 
 def main() -> None:
@@ -18,7 +21,6 @@ def main() -> None:
     # NOTE: Add commands and paths here
     commandList = [
         'del /q /f /s %temp%\*',
-        'del /q /f /s %appdata%\*',
         'ipconfig /flushdns',
     ]
 
