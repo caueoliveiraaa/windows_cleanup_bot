@@ -15,6 +15,8 @@ def display_error() -> None:
     print(red + message_error + close)
 
 
+# get how many files were deleted in each folder
+
 def main() -> None:
     """ Clean up junk files and others. """
 
