@@ -1,0 +1,187 @@
+{
+    "AnimationSeries": {
+        "Naruto Classic": {
+            "Release": "10/03/2002",
+            "Ending": "02/08/2007",
+            "Genre": "Shonen",
+            "Type": "Anime series",
+            "Lenght": "220 episodes"
+        },
+        
+        "Naruto Shippuden": {
+            "Release": "02/15/2007",
+            "Ending": "03/23/2017",
+            "Genre": "Shonen",
+            "Type": "Anime series",
+            "Lenght": "500 episodes"
+        },
+
+        "Blade Animated Series": {
+            "Release": "07/01/2011",
+            "Ending": "Unkown",
+            "Genre": "Marvel Anime",
+            "Type": "Anime series",
+            "Lenght": "12 episodes"
+        },
+        
+        "Afro Samurai": {
+            "Release": "01/04/2007",
+            "Ending": "02/01/2007",
+            "Genre": "Anime",
+            "Type": "Anime series",
+            "Lenght": "5 episodes"
+        },
+        
+        "Another": {
+            "Release": "01/10/2012",
+            "Ending": "02/27/2012",
+            "Genre": "Mistery horror",
+            "Type": "Anime series",
+            "Lenght": "12 episodes"
+        },
+        
+        "Archer": {
+            "Release": "09/17/2009",
+            "Ending": " 12/17/2023",
+            "Genre": "Adult animation, action comedy",
+            "Type": "Animated sitcom",
+            "Lenght": "145 episodes and 14 seasons"
+        },
+        
+        "Attack on Titan": {
+            "Release": "04/07/2013",
+            "Ending": "11/05/2023",
+            "Genre": "Action, dark fantasy, post-apocalyptic",
+            "Type": "Anime series",
+            "Lenght": "95 episodes and 4 seasons"
+        },
+
+        "": {
+            "Release": "00/00/0000",
+            "Ending": "00/00/0000",
+            "Genre": "",
+            "Type": "Anime series",
+            "Lenght": ""
+        },
+        
+        "": {
+            "Release": "00/00/0000",
+            "Ending": "00/00/0000",
+            "Genre": "",
+            "Type": "Anime series",
+            "Lenght": ""
+        },
+        
+        "": {
+            "Release": "00/00/0000",
+            "Ending": "00/00/0000",
+            "Genre": "",
+            "Type": "Anime series",
+            "Lenght": ""
+        },
+        
+        "": {
+            "Release": "00/00/0000",
+            "Ending": "00/00/0000",
+            "Genre": "",
+            "Type": "Anime series",
+            "Lenght": ""
+        },
+        
+        "": {
+            "Release": "00/00/0000",
+            "Ending": "00/00/0000",
+            "Genre": "",
+            "Type": "Anime series",
+            "Lenght": ""
+        },
+
+        "": {
+            "Release": "00/00/0000",
+            "Ending": "00/00/0000",
+            "Genre": "",
+            "Type": "Anime series",
+            "Lenght": ""
+        },
+        
+        "": {
+            "Release": "00/00/0000",
+            "Ending": "00/00/0000",
+            "Genre": "",
+            "Type": "Anime series",
+            "Lenght": ""
+        },
+        
+        "": {
+            "Release": "00/00/0000",
+            "Ending": "00/00/0000",
+            "Genre": "",
+            "Type": "Anime series",
+            "Lenght": ""
+        },
+        
+        "": {
+            "Release": "00/00/0000",
+            "Ending": "00/00/0000",
+            "Genre": "",
+            "Type": "Anime series",
+            "Lenght": ""
+        },
+        
+        "": {
+            "Release": "00/00/0000",
+            "Ending": "00/00/0000",
+            "Genre": "",
+            "Type": "Anime series",
+            "Lenght": ""
+        },
+        
+        "": {
+            "Release": "00/00/0000",
+            "Ending": "00/00/0000",
+            "Genre": "",
+            "Type": "Anime series",
+            "Lenght": ""
+        },
+        
+        "": {
+            "Release": "00/00/0000",
+            "Ending": "00/00/0000",
+            "Genre": "",
+            "Type": "Anime series",
+            "Lenght": ""
+        },
+        
+        "": {
+            "Release": "00/00/0000",
+            "Ending": "00/00/0000",
+            "Genre": "",
+            "Type": "Anime series",
+            "Lenght": ""
+        },
+        
+        "": {
+            "Release": "00/00/0000",
+            "Ending": "00/00/0000",
+            "Genre": "",
+            "Type": "Anime series",
+            "Lenght": ""
+        },
+        
+        "": {
+            "Release": "00/00/0000",
+            "Ending": "00/00/0000",
+            "Genre": "",
+            "Type": "Anime series",
+            "Lenght": ""
+        },
+        
+        "": {
+            "Release": "00/00/0000",
+            "Ending": "00/00/0000",
+            "Genre": "",
+            "Type": "Anime series",
+            "Lenght": ""
+        }
+    }   
+}
