@@ -1,2 +1,4 @@
 env/
 building_goals.txt
+*.json*
+*.csv*
