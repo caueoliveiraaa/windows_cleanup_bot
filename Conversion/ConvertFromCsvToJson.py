@@ -35,16 +35,22 @@ def validate_csv_data() -> DataFrame:
 
 
 def validate_row(row_dict: dict) -> dict:
-    """
-    Validate years and duration because some come enmpty
-    """
-
     try:
         cols = ['Duration (min)', 'Year']
         row_dict = validate_numbers(row_dict, cols)
     except ValueError:
         row_dict['Duration (min)'] = 0
         row_dict['Year'] = 0
+    finally:
+        row_dict = convert_columns_to_snake_case(row_dict)
+
+    return row_dict
+
+
+def convert_columns_to_snake_case(row_dict: dict) -> dict:
+    row_dict["duration_min"] = row_dict.pop("Duration (min)")
+    row_dict["review_count"] = row_dict.pop("Review Count")
+    row_dict["review_title"] = row_dict.pop("Review Title")
 
     return row_dict
 
