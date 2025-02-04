@@ -13,7 +13,7 @@ def display_error() -> None:
 
 def main() -> None:
     for command in command_list:
-        print(('-' * 120) + f'\nExecuting command? {command}\n')
+        print(('-' * 120) + f'\nExecuting command: {command}\n')
         try:
             os.system(command)
         except Exception:
