@@ -5,17 +5,12 @@ import os
 def display_error() -> None:
     """ Show error message. """
 
-    red = '\033[031m'
-    yellow = '\033[033m'
-    close = '\033[0m'
     exctp, exc, exctb = sys.exc_info()
-    message = f'\ntraceback:{exctb.tb_frame.f_code.co_name}:{exctb.tb_lineno}:{exctp}:'
-    message_error += f'{exc}\n'
-    print(yellow + message + close, end='')
-    print(red + message_error + close)
+    message = f'\ntraceback:{exctb.tb_frame.f_code.co_name}'
+    message += f':{exctb.tb_lineno}:{exctp}:'
+    print(message, end='')
+    print(f'{exc}\n')
 
-
-# get how many files were deleted in each folder
 
 def main() -> None:
     """ Clean up junk files and others. """
@@ -31,7 +26,7 @@ def main() -> None:
         print(f'Executing command: {command}:\n')
         try:
             os.system(command)
-        except:
+        except Exception:
             display_error()
 
 
