@@ -1,7 +1,6 @@
 env/
 __pycache__/
 .pytest_cache/
-building_goals.txt
 *.json*
 *.csv*
 *.pyc    
