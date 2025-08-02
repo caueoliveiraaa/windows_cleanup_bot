@@ -1,7 +1,7 @@
 """ This bot is responsable for cleaning up space in the computer """
 import os
 import sys
-from command_list import command_list
+from data.command_list import command_list
 
 
 def display_error() -> None:
