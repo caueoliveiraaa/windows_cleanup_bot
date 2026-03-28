@@ -1,47 +1,53 @@
-"""This bot is responsible for cleaning up space in the computer."""
+"""This bot is responsible for cleaning up space in a windows OS."""
 
-import os
-import sys
+from os import system
 
-from cli.rich_terminal import CliTerminal
-from data.command_list import COMMAND_LIST
+from beartype import beartype
+from rich.console import Console
+
+from config.command_list import COMMAND_LIST
+from config.messages import EXECUTING, OUTPUT, SUCCESS
 
 
-class Bot(CliTerminal):
+class Bot():
     """Bot class responsible for executing the cleanup commands."""
 
-    def report_error(self) -> None:
-        """Displays the error information."""
-        exctp, exc, exctb = sys.exc_info()
+    def __init__(self, console: Console) -> None:
+        """Initializes the Bot class.
+        
+        Parameters
+        ----------
+        console : Console
+            Class Console from the rich lib for printing.
 
-        message: str = f"\ntraceback:{exctb.tb_frame.f_code.co_name}"
-        message += f":{exctb.tb_lineno}:{exctp}:"
+        Attributes
+        ----------
+        self._console : Console
+            Instance of the rich console for printing.
+        """
+        self._console: Console = console()
 
-        self.underline(("-" * 120) + f"\n{message}\n", color="red")
-        self.bold(f"{exc}\n", color="red")
+    @beartype
+    def show(self, message: str, color: str, end: str) -> None:
+        """Prints a message to the terminal using rich formatting.
 
+        Parameters
+        ----------
+        message : str
+            The message to be printed.
+        color : str
+            The color of the message text.
+        end : str
+            The break of the line.
+        """
+        self._console.print(f"[{color}]{message}[/{color}]", end=end)
+
+    @beartype
     def main(self) -> None:
-        """Executes the bot."""
+        """Executes the bot and all the commands."""
         for command in COMMAND_LIST:
-            try:
-                self.show(
-                    message=f"{('-'*200)}\nExecuting command:", color="blue", end=" "
-                )
-                self.show(message=f"{command}\n", color="green")
-                self.show(message="Output:", color="blue", end="\n\n")
-
-                os.system(command)
-
-            except OSError:
-                self.report_error()
-            except ValueError:
-                self.report_error()
-
-        self.show(
-            message=f"{('-'*200)}\nAll commands executed successfully!\n{('-'*200)}",
-            color="green",
-        )
-
-
-if __name__ == "__main__":
-    print("This module is intended to be imported and used in other scripts.")
+            self.show(**EXECUTING)
+            self.show(f"{command}\n", "green", "\n")
+            self.show(**OUTPUT)
+            system(command)
+        self.show(**SUCCESS)
