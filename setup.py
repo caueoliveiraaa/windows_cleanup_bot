@@ -1,13 +1,19 @@
-"""This file is responsible for the project's setup."""
+"""This file is responsible for the project's setup.
+
+PROJECT_NAME (str): Project's name.
+PROJECT_VERSION (str): Project's version.
+PROJECT_AUTHOR (str): Project's author.
+PROJECT_DESCRIPTION (str): Project's description.
+"""
 
 from setuptools import find_packages, setup
 
-_PROJECT_NAME: str = "Cleanup bot"
-_PROJECT_VERSION: str = "0.1.0"
-_PROJECT_AUTHOR: str = "Cauê Oliveira"
-_PROJECT_DESCRIPTION: str = (
-    "Cleans up some junk files and opens up a little bit of space, "
-    "in the local machine."
+PROJECT_NAME: str = "Cleanup bot"
+PROJECT_VERSION: str = "0.1.0"
+PROJECT_AUTHOR: str = "Cauê Oliveira"
+PROJECT_DESCRIPTION: str = (
+    "This project cleans up junk files and opens up a bit of space "
+    "in the local windows operational system."
 )
 
 mandatory_libs: list[str] = []
@@ -23,10 +29,10 @@ if not mandatory_libs:
     raise ValueError("Could not find libs in 'requirements.txt'.")
 
 setup(
-    name=_PROJECT_NAME,
-    version=_PROJECT_VERSION,
-    packages=find_packages(exclude=["tests"]),
-    install_requires=mandatory_libs,
-    author=_PROJECT_AUTHOR,
-    description=_PROJECT_DESCRIPTION,
+    name=PROJECT_NAME,
+    versin=PROJECT_VERSION,
+    packaes=find_packages(exclude=["tests"]),
+    instal_requires=mandatory_libs,
+    author=PROJECT_AUTHOR,
+    description=PROJECT_DESCRIPTION,
 )
