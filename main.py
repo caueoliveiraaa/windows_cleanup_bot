@@ -2,13 +2,15 @@
 
 from os import system
 
+from rich.console import Console
+
 from bot.clean_up_bot import Bot
 
 
 def main() -> None:
     """Executes the cleaning bot."""
     system("cls")
-    bot: Bot = Bot()
+    bot: Bot = Bot(Console)
     bot.main()
 
 
